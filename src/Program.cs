@@ -66,7 +66,7 @@ namespace src
                     }
                     if (inputError)
                     {
-                        Console.WriteLine("Некоректный семестр.");
+                        Console.WriteLine("Некорректный семестр");
                     }
                 }
 
@@ -87,7 +87,7 @@ namespace src
                     }
                     if (inputError)
                     {
-                        Console.WriteLine("Некоректое название.");
+                        Console.WriteLine("Некорректое название");
                     }
                 }
 
@@ -108,7 +108,7 @@ namespace src
                     }
                     if (inputError)
                     {
-                        Console.WriteLine("Некоректая фамилия.");
+                        Console.WriteLine("Некорректая фамилия");
                     }
                 }
 
@@ -117,25 +117,29 @@ namespace src
 
             array.Sort();
 
-            Console.Write("Укажите путь к файлу:");
-            string inputFilename = Console.ReadLine();
+
 
             bool saveError = true;
 
             while (saveError)
             {
                 saveError = false;
+
+                Console.Write("Укажите путь к файлу:");
+                string input = Console.ReadLine();
+
                 try
                 {
-                    array.SaveToFile(inputFilename);
+                    array.SaveToFile(input);
                 }
                 catch
                 {
+                    Console.WriteLine("Ошибка при сохранении массива в файл");
                     saveError = true;
                 }
             }
 
-            Console.WriteLine("Создан файл в указанной директории.");
+            Console.WriteLine("Создан файл в указанной директории");
             Console.WriteLine("Нажмите любую клавишу для завершения программы");
             Console.ReadLine();
         }
