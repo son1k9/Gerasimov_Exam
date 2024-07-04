@@ -10,7 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{F506384B-216
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6F208404-06D2-4826-89AF-BC77673B2092}"
 	ProjectSection(SolutionItems) = preProject
-		test\Отчет по тестированию.docx = test\Отчет по тестированию.docx
+		test\Результаты тестирования.docx = test\Результаты тестирования.docx
+		test\Тест-план.docx = test\Тест-план.docx
+		test\Тест-требования.docx = test\Тест-требования.docx
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src", "src\src.csproj", "{9B466A05-B96A-4CCF-AD8A-70553A14357F}"
